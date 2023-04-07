@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Document</title>
+    <script>
+        function myage( low, high) {
+        
+         var myage =  document.getElementById('age').value;
+         
+         var actualAge= parseInt(myage);
+         
+        document.write(actualAge.toString() +':');
+        
+        
+           if ( actualAge < low  ||  actualAge > high)  {
+           
+           document.write('Invalid Age Range');
+           }
+           
+           else   {
+           
+           document.write('valid Age Range');
+         }
+        }
+    </script>
+</head>
+<body>
+    <input type="text" id="age">
+    <input type="button" value="click" onclick="myage(1,50)"/>
+</body>
+</html>

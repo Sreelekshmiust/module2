@@ -1,0 +1,61 @@
+*{
+    padding: 0px;
+    margin: 0;
+}
+body{
+    display: flexbox;
+    height: 100%;
+    width: 100%;
+    background-color: beige;
+}
+header{
+    padding: 20px;
+    text-align: center;
+    background-color: brown;
+    color: yellow;
+}
+h2{
+    padding: 15px;
+    text-align: center;
+}
+nav{
+    padding: 20px;
+    text-align: center;
+    height: 20px;
+    background-color: bisque;
+
+}
+nav a{
+    padding: 20px 20px;
+    text-decoration: none;
+    font-size: 20px;
+    margin: 15px;
+}
+nav a:hover{
+    background-color: lightskyblue;
+}
+main{
+    height: 70%;
+    background-color: lightgrey;
+}
+div{
+    display: block;
+    margin: 30px;
+    float:left;
+    width: 25%;
+    border-width: 2px;
+    border-color: lightgreen;
+    border-style: dashed;
+    height: fit-content;
+}
+footer{
+    padding: 30px;
+    text-align: center;
+    height: 30px;
+    background-color: mistyrose;
+}
+main:after{
+    content: "";
+    display: table;
+    clear: both;
+}

@@ -1,0 +1,69 @@
+<hr>
+<h2>Available Products(s)</h2>
+<h3>Product Id: {{productId}}</h3>
+<h3>Description: {{description}}</h3>
+<h3>Quality: {{qty}}</h3>
+<h3>Price: {{price}}</h3>
+<div *ngIf="isQtyAvail;else notavail">
+   <h3>Available: <span [style.background-color]="available"> &nbsp;&nbsp;&nbsp;</span></h3>
+</div>
+<ng-template #notavail>
+    <h3>Available: <span [style.background-color]="notavailable"> &nbsp;&nbsp;&nbsp;</span></h3>
+</ng-template>
+<h3>Delivery: <span [style.background-color]="delivery"> &nbsp;&nbsp;&nbsp;</span></h3>
+<h3>Enter order Quantity: <input type="text" [(ngModel)]=" orderedQty"></h3>
+<h3>You have entered : {{orderedQty}} : units</h3>
+<h3>Place Order <button type="button" (click)="takeOrder()">Place Order</button></h3>
+
+<hr>
+<div>
+    <h2>Product List</h2>
+    <table border="2">
+
+    <tr> 
+    <th>Product id</th>
+    <th>Product Name</th>
+    <th>Description</th>
+    <th>Price</th>
+    <th>Quantity</th>
+</tr>
+   <tr *ngFor="let product of products"> <td>{{product.id}}</td>
+    <td>{{product.name}}</td>
+    <td>{{product.description}}</td>
+    <td>{{product.price}}</td>
+    <td>{{product.quantity}}</td>
+</tr>
+</table>
+</div>
+<hr>
+
+<div>
+    <h2>Mobile Phones</h2>
+    <table border="2">
+        <thead>
+            <th>Product id</th>
+            <th>Product Name</th>
+            <th>Description</th>
+            <th>Price</th>
+            <th>Quantity</th>
+            <th>Values</th>  
+        </thead>
+        <tr *ngFor="let item of items">
+            <td>{{item.itemCode}}</td>
+            <td>{{item.name}}</td>
+            <td>{{item.description}}</td>
+            <td>{{item.price}}</td>
+            <td>{{item.qty}}</td>
+            <td>00000</td>
+        </tr>
+    </table>
+</div>
+<hr>
+<div *ngIf="isMember;else nonMember">
+    <h3>Member Area</h3>
+    <h4>You are eligible for a 500 Gb free download this month</h4>
+</div>
+<ng-template #nonMember>
+    <h4>Hurry! Register to avail great offers</h4>
+</ng-template>
+<hr>

@@ -1,0 +1,23 @@
+<h1 style="text-align:center">User Login</h1>
+<div class="container">
+    <form (ngSubmit)="onSubmit()" name="regForm" class="mb-4">
+        <table align="center">
+            <tr>
+                <td> <label for="email">Mail :</label> </td>
+                <td> <input type="email" name="email" [(ngModel)]="email"  class="form-control"></td>
+            </tr>
+            <tr>
+                <td> <label for="pass">Enter Password :</label> </td>
+                <td> <input type="password" name="pass" [(ngModel)]="pass" class="form-control"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td> <input  class="btn btn-primary" type="submit" value="Login">
+                    <input class="btn btn-warning" type="reset" value="reset">
+                </td>
+            </tr>
+        </table>
+    </form>
+
+</div>
+

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <title>Application Form</title>
+    <head> <h2 style="text-align: center;">Application Form</h2>
+    <link rel="stylesheet" href="css\styling.css">
+    </head>
+    <body>
+        <table align="center" style="background-color: beige; width: 500px; height: 600px;">
+            <tr>
+                <th>Applicant Photo</th>
+                <td colspan="2"><img align="right" src="D:\ustcore\html programming\appphoto.png" alt="Applicant photo" style="width: 3.5cm; height: 4.5cm;"></td>
+            </tr>
+            <tr>
+                <td class="mystyle"><label for="firstname">First Name</label></td>
+                <td><input type="text" placeholder="firstname"></td>
+            </tr>
+            <tr>
+                <td class="mystyle"><label for="lastname">Last Name</label></td>
+                <td><input type="text" placeholder="lastname"></td>
+            </tr>
+            <tr>
+                <td class="mystyle"><label for="Marital atatus">Marital Status</label></td>
+                <td><input type="radio" name="r1">Married
+                <input type="radio" name="r1">Single</td>
+            </tr>
+            <tr>
+                <td class="mystyle"><label for="sex">Gender</label></td>
+                <td><input type="radio" name="r2">Female
+                <input type="radio" name="r2">Male
+                </td>
+            </tr>
+            <tr>
+                <td class="mystyle"><label for="address">Address</label></td>
+                <td> <textarea name="" id="" cols="20" rows="3"></textarea></td>
+            </tr>
+            <tr>
+                <td class="mystyle"><label for="jobtype">Job Type</label></td>
+                <td><select name="jobtype" id="">Choose job type
+                    <option value="1">Private</option>
+                    <option value="2">Govt</option>
+                    <option value="3">Not Applicable</option></select>
+                </td>
+            </tr>
+            <tr>
+                <td class="mystyle"><input type="checkbox" name="checkbox" id=""> </td>
+                <td ><label for="">Accept Terms & Condition</label></td>
+            </tr>
+            <tr>
+                <td align="center" colspan="2"><input type="submit">
+                    <input type="button" value="Cancel"></td>
+            </tr>
+        </table>
+    </body>
+</html>

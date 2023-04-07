@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Countupperlower</title>
+    <script>
+    function countcase(word){
+    var upper=0;
+    var lower=0;
+    console.log("wordlength:" + word.length);
+
+    for(var i=0;i<word.length;i++){
+        if(word[i]==" ")
+            continue;
+        else if(word[i].toUpperCase()!=word[i]) {
+            upper=upper+1;
+        }
+        else{
+            lower=lower+1;
+        }
+    }
+console.log("UpperCount:" +upper);
+    console.log("LowerCount:" +lower);
+
+}
+countcase("HellO WoRld");
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

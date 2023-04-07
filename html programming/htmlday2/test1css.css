@@ -1,0 +1,71 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+/* h1{
+    font-family: 'Dancing Script', cursive;
+} */
+body{
+    /*background-image: url(jpg);)*/
+    border-top: rgb(7, 7, 7);
+    border-style: dashed;
+    border-color: rgb(223, 27, 27);
+    border-width: 3px;
+    background-color: rgb(223, 217, 217);
+}
+div{
+    width: 200;
+    height: 100;
+    border-color: rgb(9, 9, 9);
+    /* border-style:ridge; */
+    padding: 10px;
+    margin: 10px;
+}
+span{
+    color: black;
+} 
+#first  span{
+    color: yellow;
+}
+#second  span{
+    color: cyan;
+}
+#third span{
+    color: blue;
+}
+#first{
+    border-style: dotted;
+}
+#second{
+    border-style: double;
+}
+#third{
+    border-style: inset;
+}
+.p1{
+    background-color: rgb(68, 65, 65);
+}
+.first-para{
+    background-color: mistyrose;
+}
+#p-1{
+    font-size: large;
+    color: red;
+}
+#p-2{
+    font-size: medium;
+    color: aliceblue;
+}
+#p-3{
+    font-size: small;
+    color:greenyellow ;
+}
+#first > h1{
+    font-family: 'Pacifico', cursive;
+}
+#second > h1{
+    font-family: 'Dancing Script', cursive;
+}
+#third > h1{
+    font-family: 'Source Code Pro', monospace;
+}
